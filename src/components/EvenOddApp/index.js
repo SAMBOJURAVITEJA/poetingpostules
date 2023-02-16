@@ -8,23 +8,21 @@ class EvenOddApp extends Component {
 
 
 
+
+
     change=()=>{
         this.setState((prevState)=>(
-
              const p=Math.ceil(Math.random()*100)
 
             if(p%2===0){
+                const k1=true
+                 return {text1:p,text2:k1}
 
-               const k1=true
-
-                 return{text1:p,text2:k1}))
-
-            } else{
-
-                 const k1=false
-
-                 return{text1:p,text2:k1}))
+            }else{
+                const k1=false
+               return  {text1:p,text2:k1}
             }
+            ))
               
              
     }
